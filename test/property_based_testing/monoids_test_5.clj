@@ -127,3 +127,10 @@
 ; bit vector itself is expensive. In fact, with a bit vector of about 9.6 bits
 ; per element, the error is only 1%.
 
+; What if you wanted an approximate count of the number of times a particular key
+; appears (say that the keys represent kinds of events on an event stream), while
+; bloom filters only have bits, 1s and 0s, representing "present" or "absent", an
+; extension is the Count-Min Sketch, where each position is another array, and
+; therefore able to represent > 1.
+
+
